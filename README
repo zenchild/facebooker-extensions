@@ -1,0 +1,10 @@
+This project contains extensions to Facebooker that enhances its use for
+Desktop sessions.  For example, if you want to log into facebook without
+using a GUI browser you can simply do the following:
+
+mysession = Facebooker::Session::Desktop.create( api_key, secret_key )
+mysession.do_login
+
+You will be prompted for a login and password and then the do_login method
+uses mechanize to fill out the form and process the login for you.
+
